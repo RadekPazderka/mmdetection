@@ -2,7 +2,8 @@
 from .builder import DATASETS, PIPELINES, build_dataloader, build_dataset
 from .cityscapes import CityscapesDataset
 from .coco import CocoDataset
-from .coco_panoptic import CocoPanopticDataset, CocoLiposomeDataset, CocoSingleLiposomeDataset, CocoBMSLiposomeDataset
+from .coco_panoptic import CocoPanopticDataset, CocoLiposomeDataset, CocoSingleLiposomeDataset, CocoBMSLiposomeDataset, \
+    CocoBMSLiposomeDataset2Classes
 from .custom import CustomDataset
 from .dataset_wrappers import (ClassBalancedDataset, ConcatDataset,
                                MultiImageMixDataset, RepeatDataset)
@@ -25,5 +26,5 @@ __all__ = [
     'build_dataset', 'replace_ImageToTensor', 'get_loading_pipeline',
     'NumClassCheckHook', 'CocoPanopticDataset', 'MultiImageMixDataset',
     'OpenImagesDataset', 'OpenImagesChallengeDataset', 'CocoLiposomeDataset', 'CocoSingleLiposomeDataset',
-    'CocoBMSLiposomeDataset'
+    'CocoBMSLiposomeDataset', 'CocoBMSLiposomeDataset2Classes'
 ]
